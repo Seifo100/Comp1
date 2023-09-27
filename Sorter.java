@@ -1,21 +1,23 @@
 public class Sorter {
         public static void main(String[] args) {
             int[] arr1 = {64, 25, 12, 22, 11};
-            selectionSort(arr1);
+            sortselect(arr1);
             System.out.println("Sorted array:");
             for (int i : arr1) {
                 System.out.print(i + " ");
             }
             int[] arr2 = {12, 11, 13, 5, 6};
         System.out.println("");
-        sort(arr2);
+        sortinsert(arr2);
 
         System.out.println("Sorted array:");
         for (int num : arr2) {
             System.out.print(num + " ");
         }
         }
-    
+        public static void sortselect(int[] arr) {
+            selectionSort(arr);
+        }
         public static void selectionSort(int[] arr) {
             int n = arr.length;
     
@@ -32,7 +34,7 @@ public class Sorter {
                 arr[i] = temp;
             }
         }
-        public static void sort(int[] arr) {
+        public static void sortinsert(int[] arr) {
             insertionSort(arr);
         }
     public static void insertionSort(int[] arr) {
