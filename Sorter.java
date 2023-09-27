@@ -8,7 +8,7 @@ public class Sorter {
             }
             int[] arr2 = {12, 11, 13, 5, 6};
         System.out.println("");
-        insertionSort(arr2);
+        sort(arr2);
 
         System.out.println("Sorted array:");
         for (int num : arr2) {
@@ -31,6 +31,9 @@ public class Sorter {
                 arr[minIndex] = arr[i];
                 arr[i] = temp;
             }
+        }
+        public static void sort(int[] arr) {
+            insertionSort(arr);
         }
     public static void insertionSort(int[] arr) {
         int n = arr.length;
